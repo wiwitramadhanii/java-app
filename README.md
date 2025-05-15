@@ -2,10 +2,6 @@
 
 Sistem memungkinkan user untuk melihat daftar paket trip, memilih kategori pax sesuai jumlah peserta, dan melakukan pemesanan trip. Setiap kategori pax memiliki rentang dan harga berbeda, serta total harga akan dihitung otomatis.
 
-## Struktur Folder
-```bash
-tree -d > structure.txt
-
 ## Struktur Class
 - PaketTrip : Menyimpan informasi nama paket trip
 - TripPax : Mempresentasikan paket trip, berisi daftar kategori pax
@@ -23,6 +19,18 @@ tree -d > structure.txt
 2. cd folder penyimpanan file
 3. javac Main.java
 4. java Main
+
+## Struktur Folder
+app/
+├── Main.java
+├── paket/
+│   ├── PaketTrip.java
+│   ├── TripPax.java
+│   └── KategoriPax.java
+└── booking/
+    ├── PaketTrip.java
+    ├── TripPax.java
+    └── KategoriPax.java
 
 ### Wiwit Ramadhani
 
