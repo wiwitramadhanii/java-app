@@ -29,9 +29,9 @@ app/
 │   ├── TripPax.java
 │   └── KategoriPax.java
 └── booking/
-    ├── PaketTrip.java
-    ├── TripPax.java
-    └── KategoriPax.java
+    ├── Booking.java
+    ├── iBooking.java
+    └── DataBooking.java
 ```
 
 ### Wiwit Ramadhani
