@@ -21,6 +21,7 @@ Sistem memungkinkan user untuk melihat daftar paket trip, memilih kategori pax s
 4. java Main
 
 ## Struktur Folder
+```bash
 app/
 ├── Main.java
 ├── paket/
