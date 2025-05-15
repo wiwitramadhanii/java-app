@@ -1,4 +1,4 @@
-package paket;
+package app.paket;
 
 import java.util.List;
 
@@ -21,7 +21,7 @@ public class TripPax extends PaketTrip {
 
     @Override
     public void tampilkanInfo() {
-        System.out.println("Paket Trip : " + getNamaTrip());
+        System.out.println("--- PAKET TRIP : " + getNamaTrip() + " ---");
         for (int i = 0; i < daftarKategori.size(); i++) {
             KategoriPax kategori = daftarKategori.get(i);
             System.out.println((i + 1) + ". Kategori : " + kategori.getRange() + " pax Mulai dari : Rp " + kategori.getHargaPerPax());

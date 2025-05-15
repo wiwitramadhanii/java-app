@@ -1,4 +1,4 @@
-package paket;
+package app.paket;
 
 public abstract class PaketTrip {
 

@@ -1,10 +1,11 @@
+package app;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import booking.Booking;
-import paket.KategoriPax;
-import paket.TripPax;
+import app.booking.Booking;
+import app.paket.KategoriPax;
+import app.paket.TripPax;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +38,7 @@ public class Main {
         Booking booking = new Booking();
 
         while (mulai) {
-            System.out.println("MENU UTAMA");
+            System.out.println("==== MENU UTAMA ====");
             System.out.println("1. Daftar Paket Trip");
             System.out.println("2. Booking");
             System.out.println("3. Informasi Booking");
@@ -48,14 +49,15 @@ public class Main {
 
             switch (menu) {
                 case 1:
-                    System.out.println("DAFTAR PAKET TRIP");
+                    System.out.println("--- DAFTAR PAKET TRIP ---");
                     for (int i = 0; i < semuaTrip.size(); i++) {
                         System.out.println((i + 1) + ". " + semuaTrip.get(i).getNamaTrip());
                     }
+                    System.out.println();
                     break;
                     
                 case 2:
-                    System.out.println("Pilih Paket Trip");
+                    System.out.println("--- PILIH PAKET TRIP ---");
                     for (int i = 0; i < semuaTrip.size(); i++) {
                         System.out.println((i + 1) + ". " + semuaTrip.get(i).getNamaTrip());
                     }
@@ -80,12 +82,14 @@ public class Main {
                     KategoriPax kategoriDipilih = dipilih.getDaftarKategori().get(pilihKategori - 1);
                     System.out.print("Jumlah Pax (" + kategoriDipilih.getMin() + "-" + kategoriDipilih.getMax() + "):");
                     int jumlah = scanner.nextInt();
+                    System.out.println();
 
                     if (jumlah >= kategoriDipilih.getMin() && jumlah <= kategoriDipilih.getMax()) {
                         booking.booking(dipilih, kategoriDipilih, jumlah);
                     } else {
                         System.out.println("ERROR");
                     }
+                    System.out.println();
                     break;
 
                 case 3:
@@ -95,11 +99,13 @@ public class Main {
                     } else {
                         booking.tampilkanSemuaBooking();
                     }
+                    System.out.println();
                     break;
 
                 case 4:
                     System.out.println("Terima Kasih !");
                     mulai = false;
+                    System.out.println();
                     break;
 
                 default:

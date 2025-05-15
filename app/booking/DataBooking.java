@@ -1,7 +1,7 @@
-package booking;
+package app.booking;
 
-import paket.KategoriPax;
-import paket.TripPax;
+import app.paket.KategoriPax;
+import app.paket.TripPax;
 
 public class DataBooking {
     private TripPax trip;
@@ -33,7 +33,7 @@ public class DataBooking {
     }
 
     public void tampilkanInfo() {
-        System.out.println("DETAIL BOOKING");
+        System.out.println("--- DETAIL BOOKING ---");
         System.out.println("Trip : " + trip.getNamaTrip());
         System.out.println("Jumlah Pax : " + jumlahPax);
         System.out.println("Total : " + total);

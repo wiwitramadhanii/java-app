@@ -1,7 +1,7 @@
-package booking;
+package app.booking;
 
-import paket.KategoriPax;
-import paket.TripPax;
+import app.paket.KategoriPax;
+import app.paket.TripPax;
 
 public interface iBooking {
     void booking(TripPax trip, KategoriPax kategori, int jumlahPax);

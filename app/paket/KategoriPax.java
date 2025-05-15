@@ -1,4 +1,4 @@
-package paket;
+package app.paket;
 
 public class KategoriPax {
     private String range;

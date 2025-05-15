@@ -1,10 +1,10 @@
-package booking;
+package app.booking;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import paket.KategoriPax;
-import paket.TripPax;
+import app.paket.KategoriPax;
+import app.paket.TripPax;
 
 public class Booking implements iBooking {
     List<DataBooking> daftarBooking = new ArrayList<>();
@@ -12,7 +12,7 @@ public class Booking implements iBooking {
     public void booking(TripPax trip, KategoriPax kategori, int jumlahPax) {
         DataBooking data = new DataBooking(trip, kategori, jumlahPax);
         daftarBooking.add(data);
-        System.out.println("Berhasil Booking");
+        System.out.println("BERHASIL BOOKING ! \n");
         data.tampilkanInfo();
     }
 
